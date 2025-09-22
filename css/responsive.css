@@ -1,0 +1,870 @@
+/* River Art Website - Responsive Stylesheet */
+
+/* ===== Mobile First Approach ===== */
+
+/* ===== Small Mobile (< 480px) ===== */
+@media (max-width: 480px) {
+    /* Typography */
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    body {
+        font-size: 14px;
+    }
+    
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    /* Navigation */
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--warm-off-white);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    
+    .navbar-menu.active {
+        display: block;
+    }
+    
+    .navbar-menu ul {
+        flex-direction: column;
+    }
+    
+    .navbar-menu li {
+        margin: 0 0 15px 0;
+    }
+    
+    .navbar-language {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 80vh;
+        margin-top: 60px;
+    }
+    
+    .hero-overlay h1 {
+        font-size: 36px;
+    }
+    
+    .hero-overlay h2 {
+        font-size: 24px;
+    }
+    
+    .hero-overlay p {
+        font-size: 16px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    /* Introduction Section */
+    .introduction {
+        padding: 60px 0;
+    }
+    
+    .intro-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .intro-image {
+        order: 2;
+    }
+    
+    .intro-text {
+        order: 1;
+    }
+    
+    .intro-features {
+        gap: 20px;
+    }
+    
+    /* Featured Gallery Section */
+    .featured-gallery {
+        padding: 60px 0;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gallery-image {
+        height: 250px;
+    }
+    
+    /* Café Experience Section */
+    .cafe-experience {
+        padding: 60px 0;
+    }
+    
+    .cafe-features {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* Upcoming Events Section */
+    .upcoming-events {
+        padding: 60px 0;
+    }
+    
+    .events-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .event-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .event-date {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .event-date .day {
+        font-size: 28px;
+    }
+    
+    .event-date .month {
+        font-size: 14px;
+    }
+    
+    .featured-event-image {
+        height: 200px;
+    }
+    
+    /* Testimonials Section */
+    .testimonials {
+        padding: 60px 0;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* Newsletter Section */
+    .newsletter {
+        padding: 40px 0;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input {
+        margin-bottom: 10px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 60px 0 30px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-legal a {
+        margin: 5px 10px;
+    }
+}
+
+/* ===== Mobile (480px - 767px) ===== */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Typography */
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    body {
+        font-size: 15px;
+    }
+    
+    /* Navigation */
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--warm-off-white);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    
+    .navbar-menu.active {
+        display: block;
+    }
+    
+    .navbar-menu ul {
+        flex-direction: column;
+    }
+    
+    .navbar-menu li {
+        margin: 0 0 15px 0;
+    }
+    
+    .navbar-language {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 85vh;
+    }
+    
+    .hero-overlay h1 {
+        font-size: 48px;
+    }
+    
+    .hero-overlay h2 {
+        font-size: 28px;
+    }
+    
+    .hero-overlay p {
+        font-size: 18px;
+    }
+    
+    /* Introduction Section */
+    .intro-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    /* Featured Gallery Section */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .gallery-image {
+        height: 220px;
+    }
+    
+    /* Café Experience Section */
+    .cafe-features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    /* Upcoming Events Section */
+    .events-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    /* Testimonials Section */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* ===== Tablet (768px - 1023px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Typography */
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    /* Navigation */
+    .navbar-menu ul {
+        gap: 15px;
+    }
+    
+    .navbar-menu li {
+        margin-left: 15px;
+    }
+    
+    .navbar-language {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 90vh;
+    }
+    
+    .hero-overlay h1 {
+        font-size: 56px;
+    }
+    
+    .hero-overlay h2 {
+        font-size: 32px;
+    }
+    
+    /* Introduction Section */
+    .intro-content {
+        gap: 40px;
+    }
+    
+    /* Featured Gallery Section */
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .gallery-image {
+        height: 250px;
+    }
+    
+    /* Café Experience Section */
+    .cafe-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .cafe-feature {
+        padding: 20px;
+    }
+    
+    .cafe-feature-image {
+        height: 180px;
+    }
+    
+    /* Upcoming Events Section */
+    .events-content {
+        gap: 30px;
+    }
+    
+    /* Testimonials Section */
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* ===== Desktop (1024px - 1439px) ===== */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    /* Container */
+    .container {
+        max-width: 1140px;
+    }
+    
+    /* Navigation */
+    .navbar-menu ul {
+        gap: 20px;
+    }
+    
+    .navbar-menu li {
+        margin-left: 20px;
+    }
+    
+    /* Hero Section */
+    .hero-overlay h1 {
+        font-size: 60px;
+    }
+    
+    /* Introduction Section */
+    .intro-content {
+        gap: 50px;
+    }
+    
+    /* Featured Gallery Section */
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    /* Café Experience Section */
+    .cafe-features {
+        gap: 25px;
+    }
+    
+    /* Upcoming Events Section */
+    .events-content {
+        gap: 40px;
+    }
+    
+    /* Testimonials Section */
+    .testimonials-grid {
+        gap: 25px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        gap: 30px;
+    }
+}
+
+/* ===== Large Desktop (1440px+) ===== */
+@media (min-width: 1440px) {
+    /* Container */
+    .container {
+        max-width: 1320px;
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 42px;
+    }
+    
+    h2 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    h4 {
+        font-size: 22px;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+    
+    /* Spacing */
+    :root {
+        --spacing-xs: 10px;
+        --spacing-sm: 20px;
+        --spacing-md: 30px;
+        --spacing-lg: 40px;
+        --spacing-xl: 60px;
+        --spacing-xxl: 80px;
+    }
+    
+    /* Navigation */
+    .navbar-menu ul {
+        gap: 30px;
+    }
+    
+    .navbar-menu li {
+        margin-left: 30px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+    }
+    
+    .hero-overlay h1 {
+        font-size: 72px;
+    }
+    
+    .hero-overlay h2 {
+        font-size: 36px;
+    }
+    
+    .hero-overlay p {
+        font-size: 22px;
+    }
+    
+    /* Introduction Section */
+    .intro-content {
+        gap: 60px;
+    }
+    
+    /* Featured Gallery Section */
+    .gallery-grid {
+        gap: 30px;
+    }
+    
+    .gallery-image {
+        height: 350px;
+    }
+    
+    /* Café Experience Section */
+    .cafe-features {
+        gap: 40px;
+    }
+    
+    .cafe-feature {
+        padding: 30px;
+    }
+    
+    .cafe-feature-image {
+        height: 250px;
+    }
+    
+    /* Upcoming Events Section */
+    .events-content {
+        gap: 50px;
+    }
+    
+    /* Testimonials Section */
+    .testimonials-grid {
+        gap: 40px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        gap: 50px;
+    }
+}
+
+/* ===== Special Cases ===== */
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: 150vh;
+    }
+    
+    .hero-overlay {
+        padding: 30px 0;
+    }
+    
+    .hero-overlay h1 {
+        font-size: 28px;
+    }
+    
+    .hero-overlay h2 {
+        font-size: 20px;
+    }
+    
+    .hero-overlay p {
+        font-size: 16px;
+    }
+}
+
+/* High Resolution Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Add higher quality images for retina displays */
+    .hero {
+        background-image: url('../public/images/hero1.webp');
+    }
+    
+    .gallery-image img {
+        /* Use higher quality images for gallery */
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===== Events Page Responsive Improvements ===== */
+
+/* Registration Section Mobile Improvements */
+@media (max-width: 767px) {
+    .event-registration {
+        padding: 40px 0;
+    }
+    
+    .registration-container {
+        padding: 0 15px;
+    }
+    
+    .registration-header h2 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+    
+    .registration-header p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    
+
+    
+    .registration-form {
+        padding: 30px 20px;
+        margin: 0 15px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    }
+    
+    .registration-form h3 {
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        font-size: 15px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: var(--deep-charcoal);
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px 12px;
+        font-size: 16px; /* Prevents zoom on iOS */
+        border: 2px solid var(--soft-beige);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: var(--soft-sky-blue);
+        box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.1);
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+    }
+    
+    .form-actions .btn {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 8px;
+    }
+    
+    .checkbox-group {
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    
+    .checkbox-group label {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-left: 8px;
+    }
+}
+
+/* Tablet Registration Improvements */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .registration-form {
+        padding: 35px 30px;
+    }
+    
+    .form-row {
+        gap: 15px;
+    }
+}
+
+/* Small Mobile Registration Improvements */
+@media (max-width: 480px) {
+    .event-registration {
+        padding: 30px 0;
+    }
+    
+    .registration-container {
+        padding: 0 10px;
+    }
+    
+    .registration-header h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        line-height: 1.3;
+    }
+    
+    .registration-header p {
+        font-size: 14px;
+        padding: 0 5px;
+        line-height: 1.5;
+    }
+    
+
+    
+    .registration-form {
+        padding: 25px 15px;
+        margin: 0 10px;
+        border-radius: 10px;
+    }
+    
+    .registration-form h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 18px;
+    }
+    
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 10px;
+        font-size: 16px;
+    }
+    
+    .form-actions .btn {
+        padding: 14px;
+        font-size: 15px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    /* Navigation */
+    .navbar {
+        display: none;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .hero-overlay {
+        color: black;
+    }
+    
+    .hero-overlay h1,
+    .hero-overlay h2,
+    .hero-overlay p {
+        color: black;
+        text-shadow: none;
+    }
+    
+    /* Buttons */
+    .btn {
+        display: none;
+    }
+    
+    /* Colors */
+    body,
+    .introduction,
+    .featured-gallery,
+    .cafe-experience,
+    .upcoming-events,
+    .testimonials,
+    .newsletter,
+    .footer {
+        background: white !important;
+        color: black !important;
+    }
+    
+    /* Links */
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+    
+    /* Footer */
+    .footer {
+        border-top: 1px solid #ccc;
+    }
+}

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Γκαλερί - River Art Καφετέρια & Art Gallery στο Καρπενήσι</title>
+    <meta name="description" content="Εξερευνήστε τη γκαλερί τέχνης του River Art στο Καρπενήσι. Ανακαλύψτε έργα από ανερχόμενους τοπικούς καλλιτέχνες.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700&family=Dancing+Script:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="index.html">River Art</a>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="index.html">Αρχική</a></li>
+                    <li><a href="gallery.html" class="active">Γκαλερί</a></li>
+                    <li><a href="cafe.html">Καφετέρια</a></li>
+                    <li><a href="events.html">Εκδηλώσεις</a></li>
+                    <li><a href="contact.html">Επικοινωνία</a></li>
+                </ul>
+            </div>
+            <div class="navbar-language">
+                <a href="#" class="lang-active">EL</a>
+                <span>|</span>
+                <a href="en/gallery.html">EN</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="page-header gallery-header">
+        <div class="header-overlay">
+            <div class="container">
+                <h1>Γκαλερί</h1>
+                <p>Ανακαλύψτε τα έργα ταλέντων καλλιτεχνών από το Καρπενήσι και πέρα. Η γκαλερί μας παρουσιάζει μια ποικιλία μέσων και στυλ, αντικατοπτρίζοντας τη ζωντανή δημιουργική αύρα της κοινότητάς μας.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Options -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Όλα</button>
+                    <button class="filter-btn" data-filter="paintings">Ζωγραφική</button>
+                    <button class="filter-btn" data-filter="photography">Φωτογραφία</button>
+                    <button class="filter-btn" data-filter="sculpture">Γλυπτική</button>
+                    <button class="filter-btn" data-filter="mixed-media">Μικτά Μέσα</button>
+                    <button class="filter-btn" data-filter="digital">Ψηφιακή Τέχνη</button>
+                </div>
+                <div class="sort-options">
+                    <label for="sort">Ταξινόμηση:</label>
+                    <select id="sort">
+                        <option value="newest">Νεότερα Πρώτα</option>
+                        <option value="artist">Καλλιτέχνης Α-Ω</option>
+                        <option value="popular">Δημοφιλέστερα</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Artist Section -->
+    <section class="featured-artist">
+        <div class="container">
+            <div class="featured-artist-content">
+                <div class="featured-artist-info">
+                    <span class="artist-badge">Προτεινόμενος Καλλιτέχνης</span>
+                    <h2>Μαρία Παπαδοπούλου</h2>
+                    <p class="artist-bio">Η Μαρία Παπαδοπούλου είναι μια ανερχόμενη καλλιτέχνης από το Καρπενήσι, της οποίας η δουλειά εστιάζει στη σύγχρονη ερμηνεία της φυσικής ομορφιάς της περιοχής. Με εκπαίδευση στη Σχολή Καλών Τεχνών της Αθήνας, η Μαρία συνδυάζει παραδοσιακές τεχνικές με σύγχρονες προσεγγίσεις, δημιουργώντας έργα που είναι ταυτόχρονα οικεία και καινοτόμα.</p>
+                    <p>Η δουλειά της έχει εκτεθεί σε διάφορες γκαλερί στην Ελλάδα και έχει λάβει αναγνώριση για την ικανότητά της να καταγράφει την ουσία του τοπίου του Καρπενησίου με μια μοναδική οπτική γωνία.</p>
+                </div>
+                <div class="featured-artwork">
+                    <div class="featured-artwork-image">
+                        <img src="public/images/galery1.webp" alt="Ονειρεμένα Τοπία - Μαρία Παπαδοπούλου">
+                    </div>
+                    <div class="artwork-details">
+                        <h3>Ονειρεμένα Τοπία</h3>
+                        <p><strong>Καλλιτέχνης:</strong> Μαρία Παπαδοπούλου</p>
+                        <p><strong>Μέσο:</strong> Ακρυλική σε καμβά</p>
+                        <p><strong>Διαστάσεις:</strong> 80cm x 60cm</p>
+                        <p><strong>Έτος:</strong> 2023</p>
+                        <p class="artwork-price">Τιμή: €450</p>
+                        <div class="artwork-actions">
+                            <button class="btn btn-primary">Ενδιαφέρομαι</button>
+                            <button class="btn btn-secondary">Περισσότερα του Καλλιτέχνη</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-works">
+                <h3>Περισσότερα Έργα της Καλλιτέχνιδας</h3>
+                <div class="additional-works-grid">
+                    <div class="additional-work">
+                        <img src="public/images/galery2.webp" alt="Έργο 1 - Μαρία Παπαδοπούλου">
+                        <div class="work-overlay">
+                            <h4>Ανατολική Ανατολή</h4>
+                            <p>Ακρυλική σε καμβά, 2023</p>
+                        </div>
+                    </div>
+                    <div class="additional-work">
+                        <img src="public/images/galery3.webp" alt="Έργο 2 - Μαρία Παπαδοπούλου">
+                        <div class="work-overlay">
+                            <h4>Χειμερινή Σιωπή</h4>
+                            <p>Ακρυλική σε καμβά, 2022</p>
+                        </div>
+                    </div>
+                    <div class="additional-work">
+                        <img src="public/images/galery4.webp" alt="Έργο 3 - Μαρία Παπαδοπούλου">
+                        <div class="work-overlay">
+                            <h4>Ανοιξιάτικα Χρώματα</h4>
+                            <p>Ακρυλική σε καμβά, 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artwork Grid -->
+    <section class="artwork-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Όλα τα Έργα</h2>
+                <p>Εξερευνήστε την πλήρη συλλογή της γκαλερί μας</p>
+            </div>
+            <div class="artwork-grid">
+                <!-- Artwork Item 1 -->
+                <div class="artwork-item" data-category="paintings">
+                    <div class="artwork-image">
+                        <img src="public/images/galery5.webp" alt="Αφηρημένη Σύνθεση">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Αφηρημένη Σύνθεση</h3>
+                                <p>Γιώργος Νικολάου</p>
+                                <p>Λάδι σε καμβά, 2023</p>
+                                <div class="artwork-price">€380</div>
+                            </div>
+                            <div class="artwork-actions">
+                                <button class="view-details">Προβολή Λεπτομερειών</button>
+                                <button class="add-to-favorites">♥</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artwork Item 2 -->
+                <div class="artwork-item" data-category="photography">
+                    <div class="artwork-image">
+                        <img src="public/images/galery6.webp" alt="Φυσικές Μορφές">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Φυσικές Μορφές</h3>
+                                <p>Ελένη Παπαδοπούλου</p>
+                                <p>Φωτογραφία, 2023</p>
+                                <div class="artwork-price">€220</div>
+                            </div>
+                            <div class="artwork-actions">
+                                <button class="view-details">Προβολή Λεπτομερειών</button>
+                                <button class="add-to-favorites">♥</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artwork Item 3 -->
+                <div class="artwork-item" data-category="sculpture">
+                    <div class="artwork-image">
+                        <img src="public/images/galery1.webp" alt="Οργανική Μορφή">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Οργανική Μορφή</h3>
+                                <p>Νίκος Παπαδόπουλος</p>
+                                <p>Ξύλο και μέταλλο, 2022</p>
+                                <div class="artwork-price">€650</div>
+                            </div>
+                            <div class="artwork-actions">
+                                <button class="view-details">Προβολή Λεπτομερειών</button>
+                                <button class="add-to-favorites">♥</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artwork Item 4 -->
+                <div class="artwork-item" data-category="mixed-media">
+                    <div class="artwork-image">
+                        <img src="public/images/galery2.webp" alt="Αστικές Αναζητήσεις">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Αστικές Αναζητήσεις</h3>
+                                <p>Ανδρέας Κωνσταντίνου</p>
+                                <p>Μικτά μέσα, 2023</p>
+                                <div class="artwork-price">€420</div>
+                            </div>
+                            <div class="artwork-actions">
+                                <button class="view-details">Προβολή Λεπτομερειών</button>
+                                <button class="add-to-favorites">♥</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artwork Item 5 -->
+                <div class="artwork-item" data-category="paintings">
+                    <div class="artwork-image">
+                        <img src="public/images/galery3.webp" alt="Θαλασσινά Όνειρα">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Θαλασσινά Όνειρα</h3>
+                                <p>Σοφία Αλεξίου</p>
+                                <p>Ακουαρέλα, 2023</p>
+                                <div class="artwork-price">€350</div>
+                            </div>
+                            <div class="artwork-actions">
+                                <button class="view-details">Προβολή Λεπτομερειών</button>
+                                <button class="add-to-favorites">♥</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artwork Item 6 -->
+                <div class="artwork-item" data-category="digital">
+                    <div class="artwork-image">
+                        <img src="public/images/galery4.webp" alt="Ψηφιακή Αφηρημένη">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Ψηφιακή Αφηρημένη</h3>
+                                <p>Δημήτρης Παπαδόπουλος</p>
+                                <p>Ψηφιακή τέχνη, 2023</p>
+                                <div class="artwork-price">€280</div>
+                            </div>
+                            <div class="artwork-actions">
+                                <button class="view-details">Προβολή Λεπτομερειών</button>
+                                <button class="add-to-favorites">♥</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artwork Item 7 -->
+                <div class="artwork-item" data-category="photography">
+                    <div class="artwork-image">
+                        <img src="public/images/galery5.webp" alt="Ασπρόμαυρη Σύνθεση">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Ασπρόμαυρη Σύνθεση</h3>
+                                <p>Κατερίνα Ιωάννου</p>
+                                <p>Φωτογραφία, 2022</p>
+                                <div class="artwork-price">€250</div>
+                            </div>
+                            <div class="artwork-actions">
+                                <button class="view-details">Προβολή Λεπτομερειών</button>
+                                <button class="add-to-favorites">♥</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Artwork Item 8 -->
+                <div class="artwork-item" data-category="paintings">
+                    <div class="artwork-image">
+                        <img src="public/images/galery6.webp" alt="Χρωματιστή Εκφραση">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Χρωματιστή Εκφραση</h3>
+                                <p>Πάνος Γεωργίου</p>
+                                <p>Ακρυλική σε καμβά, 2023</p>
+                                <div class="artwork-price">€520</div>
+                            </div>
+                            <div class="artwork-actions">
+                                <button class="view-details">Προβολή Λεπτομερειών</button>
+                                <button class="add-to-favorites">♥</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-secondary load-more">Φόρτωση Περισσότερων</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artist Directory -->
+    <section class="artist-directory">
+        <div class="container">
+            <div class="section-header">
+                <h2>Οι Καλλιτέχνες μας</h2>
+                <p>Γνωρίστε τους ταλέντους που εκθέτουν στη γκαλερί μας</p>
+            </div>
+            <div class="artists-grid">
+                <!-- Artist 1 -->
+                <div class="artist-card">
+                    <div class="artist-photo">
+                        <img src="public/images/aboutUs.webp" alt="Μαρία Παπαδοπούλου">
+                    </div>
+                    <h3>Μαρία Παπαδοπούλου</h3>
+                    <p class="artist-medium">Ζωγραφική</p>
+                    <p class="artist-statement">Εστιάζω στη σύγχρονη ερμηνεία της φυσικής ομορφιάς του Καρπενησίου.</p>
+                    <a href="#" class="btn btn-secondary">Προβολή Προφίλ</a>
+                </div>
+                
+                <!-- Artist 2 -->
+                <div class="artist-card">
+                    <div class="artist-photo">
+                        <img src="public/images/aboutUs.webp" alt="Γιώργος Νικολάου">
+                    </div>
+                    <h3>Γιώργος Νικολάου</h3>
+                    <p class="artist-medium">Αφηρημένη Τέχνη</p>
+                    <p class="artist-statement">Εξερευνώ τα όρια της αφηρημένης έκφρασης μέσα από χρώμα και μορφή.</p>
+                    <a href="#" class="btn btn-secondary">Προβολή Προφίλ</a>
+                </div>
+                
+                <!-- Artist 3 -->
+                <div class="artist-card">
+                    <div class="artist-photo">
+                        <img src="public/images/aboutUs.webp" alt="Ελένη Παπαδοπούλου">
+                    </div>
+                    <h3>Ελένη Παπαδοπούλου</h3>
+                    <p class="artist-medium">Φωτογραφία</p>
+                    <p class="artist-statement">Αιχμαλωτίζω τη στιγμιαία ομορφιά της φύσης και της ανθρώπινης κατάστασης.</p>
+                    <a href="#" class="btn btn-secondary">Προβολή Προφίλ</a>
+                </div>
+                
+                <!-- Artist 4 -->
+                <div class="artist-card">
+                    <div class="artist-photo">
+                        <img src="public/images/aboutUs.webp" alt="Νίκος Παπαδόπουλος">
+                    </div>
+                    <h3>Νίκος Παπαδόπουλος</h3>
+                    <p class="artist-medium">Γλυπτική</p>
+                    <p class="artist-statement">Δημιουργώ οργανικές μορφές που εμπνέονται από τη φυσική αρχιτεκτονική.</p>
+                    <a href="#" class="btn btn-secondary">Προβολή Προφίλ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibition Information -->
+    <section class="exhibition-info">
+        <div class="container">
+            <div class="section-header">
+                <h2>Εκθέσεις</h2>
+                <p>Μείνετε ενημερωμένοι για τις τρέχουσες και επερχόμενες εκθέσεις μας</p>
+            </div>
+            
+            <!-- Current Exhibition -->
+            <div class="current-exhibition">
+                <h3>Τρέχουσα Έκθεση</h3>
+                <div class="exhibition-card">
+                    <div class="exhibition-image">
+                        <img src="public/images/galery1.webp" alt="Φθινοπωρινές Αποχρώσεις">
+                    </div>
+                    <div class="exhibition-details">
+                        <h4>Φθινοπωρινές Αποχρώσεις</h4>
+                        <p class="exhibition-dates">15 Σεπτεμβρίου - 15 Νοεμβρίου 2023</p>
+                        <p class="exhibition-description">Ομαδική έκθεση που γιορτάζει τα χρώματα και τα συναισθήματα του φθινοπώρου στο Καρπενήσι. Δέκα τοπικοί καλλιτέχνες παρουσιάζουν έργα που εμπνέονται από την αλλαγή των εποχών, δημιουργώντας μια πλούσια και ποικιλόμορφη εμπειρία για τον επισκέπτη.</p>
+                        <div class="exhibition-artists">
+                            <p><strong>Συμμετέχοντες Καλλιτέχνες:</strong> Μαρία Παπαδοπούλου, Γιώργος Νικολάου, Ελένη Παπαδοπούλου, Νίκος Παπαδόπουλος, Σοφία Αλεξίου, Ανδρέας Κωνσταντίνου, Κατερίνα Ιωάννου, Πάνος Γεωργίου, Δημήτρης Παπαδόπουλος, Άννα Χριστοδούλου</p>
+                        </div>
+                        <div class="exhibition-actions">
+                            <a href="#" class="btn btn-primary">Μάθετε Περισσότερα</a>
+                            <a href="#" class="btn btn-secondary">Προβολή Καταλόγου</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Past and Upcoming Exhibitions -->
+            <div class="exhibitions-accordion">
+                <h3>Προηγούμενες Εκθέσεις</h3>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Καλοκαιρινές Εμπνεύσεις</h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="exhibition-dates">1 Ιουνίου - 30 Αυγούστου 2023</p>
+                        <p class="exhibition-description">Έκθεση που εστίαζε στη φωτεινή και ζωντανή ατμόσφαιρα του καλοκαιριού στο Καρπενήσι.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Ανοιξιάτικη Αναγέννηση</h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="exhibition-dates">1 Μαρτίου - 31 Μαΐου 2023</p>
+                        <p class="exhibition-description">Έκθεση που γιόρταζε την αναγέννηση της φύσης την άνοιξη.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exhibitions-accordion">
+                <h3>Επερχόμενες Εκθέσεις</h3>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Χειμερινή Σιωπή</h4>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="exhibition-dates">1 Δεκεμβρίου 2023 - 28 Φεβρουαρίου 2024</p>
+                        <p class="exhibition-description">Έκθεση που θα εξερευνήσει τη γαλήνη και τη μοναξιά του χειμώνα στα βουνά του Καρπενησίου.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Visit Information -->
+    <section class="gallery-visit">
+        <div class="container">
+            <div class="gallery-visit-content">
+                <div class="visit-info">
+                    <h2>Επισκεφθείτε τη Γκαλερί</h2>
+                    <p>Η γκαλερί μας είναι ανοιχτή καθημερινά και προσφέρει μια μοναδική εμπειρία για λάτρεις της τέχνης όλων των ηλικιών. Είμαστε περήφανοι που παρουσιάζουμε έργα από ταλέντους καλλιτέχνες του Καρπενησίου και της ευρύτερης περιοχής.</p>
+                    
+                    <div class="visit-details">
+                        <div class="visit-hours">
+                            <h3>Ωράριο Λειτουργίας</h3>
+                            <p><strong>Δευτέρα - Παρασκευή:</strong> 10:00 πμ - 6:00 μμ</p>
+                            <p><strong>Σάββατο - Κυριακή:</strong> 10:00 πμ - 8:00 μμ</p>
+                            <p class="note">*Το ωράριο μπορεί να διαφέρει κατά τις εκδηλώσεις</p>
+                        </div>
+                        
+                        <div class="visit-admission">
+                            <h3>Είσοδος</h3>
+                            <p>Η είσοδος στη γκαλερί είναι <strong>δωρεάν</strong> για το κοινό.</p>
+                            <p>Για οργανωμένες ομάδες ή σχολεία, παρακαλούμε επικοινωνήστε μαζί μας τουλάχιστον μια εβδομάδα νωρίτερα για να κανονίσουμε την επίσκεψή σας.</p>
+                        </div>
+                        
+                        <div class="visit-guidelines">
+                            <h3>Οδηγίες για Επισκέπτες</h3>
+                            <ul>
+                                <li>Παρακαλούμε μην αγγίζετε τα έργα τέχνης</li>
+                                <li>Η φωτογραφία είναι επιτρεπτή χωρίς φλας</li>
+                                <li>Κρατήστε ήσυχη ατμόσφαιρα σε σεβασμό προς τους άλλους επισκέπτες</li>
+                                <li>Τα τρόφιμα και τα ποτά επιτρέπονται μόνο στην περιοχή της καφετέριας</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="visit-image">
+                    <img src="public/images/artGalery.webp" alt="Εσωτερικό της γκαλερί">
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="contact.html" class="btn btn-primary">Προγραμματίστε την Επίσκεψή σας</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>River Art</h3>
+                    <p class="artist-statement">Το River Art είναι όπου η δημιουργικότητα ρέει ελεύθερα όπως η συζήτηση. Πιστεύουμε στη δύναμη της τέχνης να ενώνει τους ανθρώπους, να εμπνέει νέες προοπτικές και να γιορτάζει το μοναδικό πνεύμα του Καρπενησίου. Ο χώρος μας είναι περισσότερο από μια γκαλερί ή καφετέρια - είναι μια κοινότητα όπου η τέχνη και η ζωή συναντώνται με όμορφο, απρόσμενο τρόπο.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Εξερευνήστε</h3>
+                    <ul>
+                        <li><a href="index.html">Αρχική</a></li>
+                        <li><a href="gallery.html">Γκαλερί</a></li>
+                        <li><a href="cafe.html">Καφετέρια</a></li>
+                        <li><a href="events.html">Εκδηλώσεις</a></li>
+                        <li><a href="contact.html">Επικοινωνία</a></li>
+                        <li><a href="#">Υποβολή Έργων</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Επισκεφθείτε μας</h3>
+                    <address>
+                        <p><i class="icon-map"></i> Οδός Ανατολής 15, Καρπενήσι 36100</p>
+                        <p><i class="icon-phone"></i> <a href="tel:+302237022233">+30 2237 022233</a></p>
+                        <p><i class="icon-email"></i> <a href="mailto:info@riverart.gr">info@riverart.gr</a></p>
+                    </address>
+                    <div class="footer-hours">
+                        <p><strong>Ωράριο Λειτουργίας:</strong></p>
+                        <p>Καθημερινά: 9:00 πμ - 9:00 μμ</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Ακολουθήστε μας</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/riverartkarpenisi" target="_blank" rel="noopener" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="https://www.facebook.com/riverartkarpenisi" target="_blank" rel="noopener" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="https://twitter.com/riverartkarpenisi" target="_blank" rel="noopener" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Λάβετε ενημερώσεις για εκθέσεις, workshops και εκδηλώσεις.</p>
+                        <form class="footer-newsletter-form">
+                            <input type="email" placeholder="Το email σας">
+                            <button type="submit" class="btn btn-primary">Εγγραφή</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 River Art. Με την επιφύλαξη παντός δικαιώματος.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Πολιτική Απορρήτου</a>
+                    <span>|</span>
+                    <a href="#">Όροι Χρήσης</a>
+                    <span>|</span>
+                    <a href="#">Πολιτική Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

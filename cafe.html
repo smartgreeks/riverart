@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Καφετέρια - River Art Καφετέρια & Art Gallery στο Καρπενήσι</title>
+    <meta name="description" content="Απολαύστε εξαιρετικό καφέ σε ένα εμπνευστικό περιβάλλον στο River Art. Εξερευνήστε το μενού μας και την μοναδική ατμόσφαιρα της καφετέριας μας.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700&family=Dancing+Script:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="index.html">River Art</a>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="index.html">Αρχική</a></li>
+                    <li><a href="gallery.html">Γκαλερί</a></li>
+                    <li><a href="cafe.html" class="active">Καφετέρια</a></li>
+                    <li><a href="events.html">Εκδηλώσεις</a></li>
+                    <li><a href="contact.html">Επικοινωνία</a></li>
+                </ul>
+            </div>
+            <div class="navbar-language">
+                <a href="#" class="lang-active">EL</a>
+                <span>|</span>
+                <a href="en/cafe.html">EN</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cafe Header -->
+    <section class="page-header cafe-header">
+        <div class="header-overlay">
+            <div class="container">
+                <h1>Η Καφετέρια</h1>
+                <h2>Ειδικός Καφές σε ένα Εμπνευστικό Χώρο</h2>
+                <p>Η καφετέρια μας προσφέρει περισσότερα από απλώς εξαιρετικό καφέ – είναι ένας χώρος όπου η δημιουργικότητα ρέει ελεύθερα όπως η συζήτηση. Απολαύστε τοπικά ψημένους κόκκους, σπιτικά γλυκά και μια συνεχώς μεταβαλλόμενη θέα τοπικών έργων τέχνης.</p>
+                <a href="#menu" class="btn btn-primary">Δείτε το Μενού μας</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cafe Atmosphere Section -->
+    <section class="cafe-atmosphere">
+        <div class="container">
+            <h2>Ένας Χώρος Μοναδικός</h2>
+            <p>Το River Art συνδυάζει τη ζεστασιά μιας παραδοσιακής ελληνικής καφετέριας με την έμπνευση μιας γκαλερί τέχνης. Το φυσικό φως πλημμυρίζει τον χώρο μας, δημιουργώντας το τέλειο περιβάλλον για συζήτηση, δημιουργικότητα και περισυλλογή.</p>
+            
+            <div class="cafe-features">
+                <div class="cafe-feature">
+                    <div class="cafe-feature-image">
+                        <img src="public/images/cafe.webp" alt="Φωτεινός και αεράτος χώρος">
+                    </div>
+                    <h3>Φωτεινός & Αεράτος</h3>
+                    <p>Με παράθυρα από το πάτωμα μέχρι την οροφή που προσφέρουν θέα στο τοπίο του Καρπενησίου, δημιουργώντας το τέλειο περιβάλλον για χαλάρωση και δημιουργικότητα.</p>
+                </div>
+                <div class="cafe-feature">
+                    <div class="cafe-feature-image">
+                        <img src="public/images/artGalery.webp" alt="Χώρος γεμάτος τέχνη">
+                    </div>
+                    <h3>Γεμάτος Τέχνη</h3>
+                    <p>Απολαύστε τον καφέ σας περιτριγυρισμένοι από συνεχώς εναλλασσόμενες εκθέσεις τοπικών καλλιτεχνών, δημιουργώντας μια δυναμική και εμπνευστική ατμόσφαιρα.</p>
+                </div>
+                <div class="cafe-feature">
+                    <div class="cafe-feature-image">
+                        <img src="public/images/galery1.webp" alt="Ανετός χώρος">
+                    </div>
+                    <h3>Ανετός Χώρος</h3>
+                    <p>Σχεδιασμένος χώρος για εργασία, συναντήσεις ή απλά χαλάρωση, με άνετα καθίσματα και ζεστή ατμόσφαιρα που σας κάνει να νιώθετε σαν στο σπίτι σας.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="menu-content">
+                <div class="menu-sidebar">
+                    <h3>Μενού</h3>
+                    <ul class="menu-categories">
+                        <li><a href="#coffee" class="menu-category active">Καφές</a></li>
+                        <li><a href="#tea" class="menu-category">Τσάι</a></li>
+                        <li><a href="#food" class="menu-category">Φαγητό</a></li>
+                        <li><a href="#specialty" class="menu-category">Ειδικά</a></li>
+                    </ul>
+                    <div class="menu-download">
+                        <a href="#" class="btn btn-secondary">Κατεβάστε το Πλήρες Μενού (PDF)</a>
+                    </div>
+                </div>
+                <div class="menu-items">
+                    <!-- Coffee Section -->
+                    <div id="coffee" class="menu-category-content">
+                        <h3>Καφές</h3>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Espresso</h4>
+                                <span class="menu-item-price">€2.50</span>
+                            </div>
+                            <p>Κλασικός ιταλικός espresso με πλούσια γεύση και πυκνή κρέμα.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Κλασικό</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Cappuccino</h4>
+                                <span class="menu-item-price">€3.50</span>
+                            </div>
+                            <p>Espresso με ζεστό γάλα και αφρόγαλα, πασπαλισμένος με κακάο.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Δημοφιλές</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Caffè Latte</h4>
+                                <span class="menu-item-price">€3.80</span>
+                            </div>
+                            <p>Espresso με περισσότερο ζεστό γάλα και ελαφρύ αφρόγαλα.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Απαλό</span>
+                            </div>
+                        </div>
+                        <div class="menu-item featured">
+                            <div class="menu-item-header">
+                                <h4>River Art Special</h4>
+                                <span class="menu-item-price">€4.50</span>
+                            </div>
+                            <p>Ο δικός μας ειδικός συνδυασμός espresso με σιρόπι βανίλιας, ζεστό γάλα και μια πρέζα κανέλας. Το απόλυτο signature drink μας.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Ειδικό</span>
+                                <span class="tag">Προτεινόμενο</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Americano</h4>
+                                <span class="menu-item-price">€3.00</span>
+                            </div>
+                            <p>Espresso με προσθήκη ζεστού νερού, για μια πιο ήπια γεύση.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Χωρίς γάλα</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Macchiato</h4>
+                                <span class="menu-item-price">€3.20</span>
+                            </div>
+                            <p>Espresso με μια κουταλιά αφρογάλα.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Δυνατό</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tea Section -->
+                    <div id="tea" class="menu-category-content" style="display: none;">
+                        <h3>Τσάι</h3>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Τσάι του Βουνού</h4>
+                                <span class="menu-item-price">€3.00</span>
+                            </div>
+                            <p>Μείγμα βοτάνων από τα βουνά του Καρπενησίου, ιδανικό για χαλάρωση.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Τοπικό</span>
+                                <span class="tag">Χωρίς καφεΐνη</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Πράσινο Τσάι</h4>
+                                <span class="menu-item-price">€2.80</span>
+                            </div>
+                            <p>Ποιότητα πρώτης επιλογής, πλούσιο σε αντιοξειδωτικά.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Υγιεινό</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Τσάι Τζίντζερ Λεμονιού</h4>
+                                <span class="menu-item-price">€3.50</span>
+                            </div>
+                            <p>Φρέσκο τζίντζερ και λεμόνι με μέλι, τέλειο για κρύες μέρες.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Αναζωογονητικό</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Τσάι Μαστίχας</h4>
+                                <span class="menu-item-price">€3.20</span>
+                            </div>
+                            <p>Μοναδικό τσάι με γεύση μαστίχας από τη Χίο.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Ελληνικό</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Food Section -->
+                    <div id="food" class="menu-category-content" style="display: none;">
+                        <h3>Φαγητό</h3>
+                        <div class="menu-subcategory">
+                            <h4>Πρωινό</h4>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4>Κλασικό Ελληνικό Πρωινό</h4>
+                                    <span class="menu-item-price">€6.50</span>
+                                </div>
+                                <p>Δύο αυγά, φέτα, ελιά, ψωμί και βούτυρο.</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Παραδοσιακό</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4>Γιαούρτι με Μέλι & Καρύδια</h4>
+                                    <span class="menu-item-price">€5.00</span>
+                                </div>
+                                <p>Πρόβειο γιαούρτι με τοπικό μέλι και καρύδια.</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Υγιεινό</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-subcategory">
+                            <h4>Ελαφριά Γεύματα</h4>
+                            <div class="menu-item featured">
+                                <div class="menu-item-header">
+                                    <h4>Σάντουιτς με Αυγό & Αβοκάντο</h4>
+                                    <span class="menu-item-price">€7.50</span>
+                                </div>
+                                <p>Αυγό, αβοκάντο, φρέσκια ντομάτα, μαρούλι και μαγιονέζα σε ψωμί σίκαλης.</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Προτεινόμενο</span>
+                                    <span class="tag">Χορτοφαγικό</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4>Τυρόπιτα</h4>
+                                    <span class="menu-item-price">€5.50</span>
+                                </div>
+                                <p>Παραδοσιακή τυρόπιτα με φέτα και αυγό.</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Παραδοσιακό</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4>Σαλάτα Καπετανάκη</h4>
+                                    <span class="menu-item-price">€8.50</span>
+                                </div>
+                                <p>Φρέσκια σαλάτα με ντομάτα, αγγούρι, κρεμμύδι, ελιά, φέτα και ελαιόλαδο.</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Φρέσκο</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-subcategory">
+                            <h4>Γλυκά</h4>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4>Μπακλαβάς</h4>
+                                    <span class="menu-item-price">€4.00</span>
+                                </div>
+                                <p>Παραδοσιακός μπακλαβάς με σιρόπι.</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Παραδοσιακό</span>
+                                </div>
+                            </div>
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4>Τάρτα Λεμονιού</h4>
+                                    <span class="menu-item-price">€4.50</span>
+                                </div>
+                                <p>Φρέσκια τάρτα λεμονιού με κρέμα μασκαρπόνε.</p>
+                                <div class="menu-item-tags">
+                                    <span class="tag">Φρέσκο</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Specialty Section -->
+                    <div id="specialty" class="menu-category-content" style="display: none;">
+                        <h3>Ειδικά</h3>
+                        <div class="menu-item featured">
+                            <div class="menu-item-header">
+                                <h4>Χειμερινό Σοκολατένιο</h4>
+                                <span class="menu-item-price">€5.00</span>
+                            </div>
+                            <p>Πλούσια σοκολάτα με γάλα, κρέμα γάλακτος και σαντιγί, πασπαλισμένο με κακάο.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Εποχιακό</span>
+                                <span class="tag">Προτεινόμενο</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Φρέσκος Χυμός Πορτοκαλιού & Καρότου</h4>
+                                <span class="menu-item-price">€4.00</span>
+                            </div>
+                            <p>Φρεσκοστυμμένος χυμός πορτοκαλιού και καρότου.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Φρέσκο</span>
+                                <span class="tag">Υγιεινό</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Smoothie Μπανάνα & Μύρτιλλο</h4>
+                                <span class="menu-item-price">€4.50</span>
+                            </div>
+                            <p>Μπανάνα, μύρτιλλο, γιαούρτι και μέλι.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Ενεργειακό</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Philosophy Section -->
+    <section class="coffee-philosophy">
+        <div class="container">
+            <div class="coffee-philosophy-content">
+                <div class="philosophy-text">
+                    <h2>Η Φιλοσοφία του Καφέ μας</h2>
+                    <p>Πιστεύουμε ότι ο καλός καφές, όπως και η καλή τέχνη, απαιτεί προσοχή στη λεπτομέρεια, ποιοτικά υλικά και πάθος. Οι κόκκοι μας ψήνονται τοπικά σε μικρές παρτίδες, εξασφαλίζοντας φρεσκάδα και υποστηρίζοντας την κοινότητα των παραγωγών μας.</p>
+                    
+                    <div class="philosophy-points">
+                        <div class="philosophy-point">
+                            <h3>Τοπικά Προερχόμενοι</h3>
+                            <p>Συνεργαζόμαστε με Έλληνες ψήστες που μοιράζονται την αφοσίωσή μας στην ποιότητα.</p>
+                        </div>
+                        <div class="philosophy-point">
+                            <h3>Μικρές Παρτίδες</h3>
+                            <p>Φρεσκοψημένοι σε μικρές ποσότητες για βέλτιστη γεύση.</p>
+                        </div>
+                        <div class="philosophy-point">
+                            <h3>Ειδικώς Παρασκευασμένος</h3>
+                            <p>Οι μπάρμαν μας είναι καλλιτέχνες στο είδος τους, ετοιμάζοντας κάθε ποτό με φροντίδα.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="philosophy-images">
+                    <div class="philosophy-image">
+                        <img src="public/images/sweets.webp" alt="Κόκκοι καφέ">
+                    </div>
+                    <div class="philosophy-image">
+                        <img src="public/images/cafe.webp" alt="Παρασκευή καφέ">
+                    </div>
+                    <div class="philosophy-image">
+                        <img src="public/images/galery2.webp" alt="Σερβίρισμα καφέ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Specials Section -->
+    <section class="seasonal-specials">
+        <div class="container">
+            <h2>Εποχιακές Προσφορές</h2>
+            <p>Το μενού μας αλλάζει με τις εποχές, featuring τοπικά υλικά και δημιουργικούς συνδυασμούς που εμπνέονται από την τέχνη γύρω μας.</p>
+            
+            <div class="specials-grid">
+                <div class="special-card">
+                    <div class="special-image">
+                        <img src="public/images/sweets.webp" alt="Φθινοπωρινό Ειδικό">
+                    </div>
+                    <div class="special-content">
+                        <span class="special-badge">Νέο</span>
+                        <h3>Φθινοπωρινός Καφές</h3>
+                        <p>Espresso με σιρόπι κακάο, σαντιγί και μια πρέζα κανέλας. Το τέλειο ποτό για κρύες φθινοπωρινές μέρες.</p>
+                        <div class="special-price">€4.80</div>
+                        <div class="special-availability">Διαθέσιμο μέχρι: 30 Νοεμβρίου</div>
+                    </div>
+                </div>
+                
+                <div class="special-card">
+                    <div class="special-image">
+                        <img src="public/images/cafe.webp" alt="Pumpkin Spice Latte">
+                    </div>
+                    <div class="special-content">
+                        <span class="special-badge">Περιορισμένη Έκδοση</span>
+                        <h3>Pumpkin Spice Latte</h3>
+                        <p>Το κλασικό φθινοπωρινό ρόφημα με γεύση κολοκύθας, καρύδας και μπαχαρικών.</p>
+                        <div class="special-price">€4.50</div>
+                        <div class="special-availability">Διαθέσιμο μέχρι: 30 Νοεμβρίου</div>
+                    </div>
+                </div>
+                
+                <div class="special-card">
+                    <div class="special-image">
+                        <img src="public/images/galery3.webp" alt="Μηλόκρασο">
+                    </div>
+                    <div class="special-content">
+                        <span class="special-badge">Χωρίς Καφεΐνη</span>
+                        <h3>Ζεστό Μηλόκρασο</h3>
+                        <p>Φρέσκο μηλόκρασο με κανέλα, γαρύφαλλο και μια πρέζα χυμού λεμονιού.</p>
+                        <div class="special-price">€3.80</div>
+                        <div class="special-availability">Διαθέσιμο μέχρι: 30 Νοεμβρίου</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cafe Events Section -->
+    <section class="cafe-events">
+        <div class="container">
+            <h2>Εκδηλώσεις Καφετέριας</h2>
+            <p>Η καφετέρια μας δεν είναι μόνο για καφέ – είναι ένας κοινοτικός χώρος για εκδηλώσεις, workshops και συγκεντρώσεις που ενώνουν τους ανθρώπους.</p>
+            
+            <div class="events-content">
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">Οκτ</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Ανοιχτά Μικρόφωνο</h3>
+                            <p>Τοπικοί μουσικοί και ποιητές ερμηνεύουν τα έργα τους σε μια χαλαρή ατμόσφαιρα.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">19</span>
+                            <span class="month">Οκτ</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Workshop: Τέχνη του Latte</h3>
+                            <p>Μάθετε να δημιουργείτε όμορφα σχέδια στον καφέ σας με τον ειδικό μας μπάρμαν.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">26</span>
+                            <span class="month">Οκτ</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Βιβλιοφιλική Συνάντηση</h3>
+                            <p>Μηνιαίες συζητήσεις για βιβλία τέχνης και λογοτεχνίας.</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="day">02</span>
+                            <span class="month">Νοε</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Δοκιμή Καφέ</h3>
+                            <p>Εξερευνήστε διαφορετικές ποικιλίες καφέ και μεθόδους παρασκευής.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-image">
+                    <img src="public/images/artGalery.webp" alt="Εκδήλωση στην καφετέρια">
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="events.html" class="btn btn-secondary">Δείτε Όλες τις Εκδηλώσεις</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit the Cafe Section -->
+    <section class="visit-cafe">
+        <div class="container">
+            <h2>Επισκεφθείτε μας</h2>
+            <p>Είμαστε ανοιχτοί καθημερινά, έτοιμοι να σας καλωσορίσουμε με εξαιρετικό καφέ και εμπνευσμένη τέχνη.</p>
+            
+            <div class="visit-cards">
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="icon-clock"></i>
+                    </div>
+                    <h3>Ωράριο</h3>
+                    <p>Δευτέρα - Παρασκευή: 9:00 πμ - 9:00 μμ</p>
+                        <p>Σαββατοκύριακο: 8:00 πμ - 10:00 μμ</p>
+                    <p class="note">*Εκτεταμένες ώρες τα Σαββατοκύριακα</p>
+                </div>
+                
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="icon-map"></i>
+                    </div>
+                    <h3>Τοποθεσία</h3>
+                    <p>Οδός Ανατολής 15, Καρπενήσι 36100</p>
+                    <p class="note">*Εύκολη στάθμευση διαθέσιμη</p>
+                </div>
+                
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="icon-phone"></i>
+                    </div>
+                    <h3>Επικοινωνία</h3>
+                    <p><a href="tel:+302237022233">+30 2237 022233</a></p>
+                    <p class="note">*Παρακαλούμε να καλέσετε για μεγάλες ομάδες</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery & Cafe Integration -->
+    <section class="gallery-cafe-integration">
+        <div class="container">
+            <div class="integration-content">
+                <div class="integration-text">
+                    <h2>Όπου η Τέχνη Συναντά τον Καφέ</h2>
+                    <p>Στο River Art, πιστεύουμε ότι ο καφές και η τέχνη συμπληρώνονται φυσικά. Η καφετέρια μας έχει σχεδιαστεί για να ενισχύσει την εμπειρία της γκαλερί, και οι εκθέσεις μας έχουν επιμεληθεί για να εμπλουτίσουν τις καφετινές σας στιγμές.</p>
+                    
+                    <div class="integration-benefits">
+                        <div class="benefit">
+                            <h3>Απολαύστε τον καφέ σας περιτριγυρισμένοι από εμπνευστικά έργα τέχνης</h3>
+                        </div>
+                        <div class="benefit">
+                            <h3>Συζητήστε τα κομμάτια με άλλους λάτρεις της τέχνης</h3>
+                        </div>
+                        <div class="benefit">
+                            <h3>Γνωρίστε τους καλλιτέχνες κατά τα ειδικά ανοίγματα εκθέσεων</h3>
+                        </div>
+                        <div class="benefit">
+                            <h3>Βρείτε το τέλειο κομμάτι για να πάρετε μαζί σας ενώ πίνετε</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="integration-image">
+                    <img src="public/images/artGalery.webp" alt="Γκαλερί και καφετέρια μαζί">
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="gallery.html" class="btn btn-secondary">Δείτε την Τρέχουσα Έκθεση</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>River Art</h3>
+                    <p class="artist-statement">Το River Art είναι όπου η δημιουργικότητα ρέει ελεύθερα όπως η συζήτηση. Πιστεύουμε στη δύναμη της τέχνης να ενώνει τους ανθρώπους, να εμπνέει νέες προοπτικές και να γιορτάζει το μοναδικό πνεύμα του Καρπενησίου. Ο χώρος μας είναι περισσότερο από μια γκαλερί ή καφετέρια - είναι μια κοινότητα όπου η τέχνη και η ζωή συναντώνται με όμορφο, απρόσμενο τρόπο.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Εξερευνήστε</h3>
+                    <ul>
+                        <li><a href="index.html">Αρχική</a></li>
+                        <li><a href="gallery.html">Γκαλερί</a></li>
+                        <li><a href="cafe.html">Καφετέρια</a></li>
+                        <li><a href="events.html">Εκδηλώσεις</a></li>
+                        <li><a href="contact.html">Επικοινωνία</a></li>
+                        <li><a href="#">Υποβολή Έργων</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Επισκεφθείτε μας</h3>
+                    <address>
+                        <p><i class="icon-map"></i> Οδός Ανατολής 15, Καρπενήσι 36100</p>
+                        <p><i class="icon-phone"></i> <a href="tel:+302237022233">+30 2237 022233</a></p>
+                        <p><i class="icon-email"></i> <a href="mailto:info@riverart.gr">info@riverart.gr</a></p>
+                    </address>
+                    <div class="footer-hours">
+                        <p><strong>Ωράριο Λειτουργίας:</strong></p>
+                        <p>Καθημερινά: 9:00 πμ - 9:00 μμ</p>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Ακολουθήστε μας</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/riverartkarpenisi" target="_blank" rel="noopener" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        <a href="https://www.facebook.com/riverartkarpenisi" target="_blank" rel="noopener" aria-label="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="https://twitter.com/riverartkarpenisi" target="_blank" rel="noopener" aria-label="Twitter"><i class="icon-twitter"></i></a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Λάβετε ενημερώσεις για εκθέσεις, workshops και εκδηλώσεις.</p>
+                        <form class="footer-newsletter-form">
+                            <input type="email" placeholder="Το email σας">
+                            <button type="submit" class="btn btn-primary">Εγγραφή</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 River Art. Με την επιφύλαξη παντός δικαιώματος.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Πολιτική Απορρήτου</a>
+                    <span>|</span>
+                    <a href="#">Όροι Χρήσης</a>
+                    <span>|</span>
+                    <a href="#">Πολιτική Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cafe.js"></script>
+</body>
+</html>
